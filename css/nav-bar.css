@@ -16,3 +16,20 @@
   font-size: 22px;
   color: #2f363e;
 }
+.nav .nav__list-link {
+  position: relative;
+}
+.nav .nav__badge {
+  position: absolute;
+  right: -8px;
+  top: -10px;
+  color: white;
+  font-size: 12px;
+  background-color: #e65f3e;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
