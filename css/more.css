@@ -1,0 +1,53 @@
+.more .more__btn-list,
+.more .more__suggestions-list {
+  margin-top: 10px;
+  display: flex;
+  justify-content: left;
+  padding: 30px 0px;
+}
+.more .more__btn,
+.more .more__suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  width: 25%;
+}
+
+.more .more__btn-title,
+.more .suggestion__title {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.more .more__btn-icon {
+  font-size: 14px;
+}
+
+.more .more__suggestions {
+  border-top: 1px solid #f7f7f7;
+  padding-top: 20px;
+}
+.more .more__title {
+  opacity: 0.8;
+  border-bottom: 1px solid #f7f7f7;
+  padding-bottom: 20px;
+}
+
+.more .suggestion__icon {
+  background-color: #fce006;
+  padding: 10px;
+  border-radius: 10px;
+  width: ;
+}
+.more .suggestion__icon i {
+  color: white;
+}
+
+.more .suggestion__icon {
+  display: flex;
+  font-size: 13px;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
