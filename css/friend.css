@@ -4,9 +4,7 @@
   align-items: center;
 }
 
-.friend .friend__avatar {
-  width: 50px;
-  height: 50px;
+.friend__avatar {
   border-radius: 35%;
 }
 .friend__avatar.g-avatar {
@@ -16,6 +14,10 @@
 .friend__avatar.m-avatar {
   width: 60px;
   height: 60px;
+}
+.friend__avatar.s-avatar {
+  width: 50px;
+  height: 50px;
 }
 
 .friend .friend__column {
