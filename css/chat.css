@@ -1,14 +1,22 @@
+.header-wrapper {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
 .chats-body {
-  padding: 10px 0 0 0;
+  padding: 100px 0 0 0;
+  background-image: url("../images/chatBg.png");
+  min-height: 150vh;
 }
 
 .chats-body .status-bar,
 .chats-body .header {
   padding: 0px 20px;
-}
-.chat-screen {
-  background-image: url("../images/chatBg.png");
-  min-height: 87vh;
 }
 
 .chat__write {
@@ -25,6 +33,12 @@
   padding: 10px 20px;
   border-radius: 40px;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat__write {
+  bottom: 0px;
+  width: 100%;
+  border-radius: 0;
 }
 
 .chat__write i {
