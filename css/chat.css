@@ -42,6 +42,18 @@
   right: 20px;
 }
 
+@keyframes float {
+  0% {
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .chat__write {
   width: 100%;
   border-radius: 0;
@@ -50,20 +62,22 @@
   padding: 20px 60px;
   border: none;
   font-size: 14px;
-  transition: all 0.5s ease-in;
+  transition: width 0.5s ease-in, transform 0.5s ease-in,
+    border-radius 0.5s ease-in;
 }
 
 .chat__write:focus {
   outline: none;
   width: 80%;
-  transform: translateY(-80px);
+  transform: ;
   border-radius: 40px;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-80px);
+  animation: float 1s ease-in-out infinite forwards;
 }
 
 .chat__icon {
   font-size: 20px;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .chat__write:focus ~ .chat__icon {
@@ -141,4 +155,33 @@
 .sent-message .message__bubble {
   border-bottom-right-radius: 0px;
   background-image: linear-gradient(to right, #b2fefa, #0ed2f7);
+}
+
+@keyframes incomingAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.incoming-message {
+  animation: incomingAnimation 0.7s ease-out forwards;
+}
+@keyframes sentAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.sent-message {
+  animation: sentAnimation 0.7s ease-out forwards;
 }
