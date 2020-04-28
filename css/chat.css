@@ -1,5 +1,6 @@
 .header-wrapper {
   position: fixed;
+  z-index: 2;
   top: 0px;
   width: 100%;
   background-color: white;
@@ -127,8 +128,18 @@
   align-self: flex-end;
 }
 
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
 .message img {
   margin-right: 15px;
+  animation: spin 1s linear 3;
 }
 
 .message .message__bubble {
